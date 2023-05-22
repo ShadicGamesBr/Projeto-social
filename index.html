@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Projeto redes sociais</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(imagens/fundo-madeira.jpg);
+            height: 100vh;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        aside a img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        aside{
+            display: grid;
+            justify-content: end;
+        }
+        article{
+            display: grid;
+            justify-content: center;
+        }
+        footer{
+            display: grid;
+            justify-content: center;
+        }
+        #iphone{
+            height: 400px;
+            position: relative;
+            top: -50vh;
+        }
+        #iframe{
+            position: relative;
+            width: 169px;
+            height: 299px;
+            top: -50vh;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <aside>
+            <a href="home.html" target="iframe"><img src="imagens/logo-home.jpg" alt=""></a>
+
+            <a href="youtube.html" target="iframe"><img src="imagens/logo-youtube.jpg" alt=""></a>
+
+            <a href="github.html" target="iframe"><img src="imagens/logo-github.jpg" alt=""></a>
+
+            <a href="instagram.html" target="iframe"><img src="imagens/logo-instagram.jpg" alt=""></a>
+
+            <a href="twitter.html" target="iframe"><img src="imagens/logo-twitter.jpg" alt=""></a>
+
+            <a href="facebook.html" target="iframe"><img src="imagens/logo-facebook.jpg" alt=""><a>
+        </aside>
+        <article>
+            <img id="iphone" src="imagens/frame-iphone.png" alt="">
+        </article>
+        <footer>
+            <iframe id="iframe" name="iframe" src="home.html" frameborder="0"></iframe>
+        </footer>
+    </header>
+</body>
+</html>
