@@ -7,6 +7,9 @@
     <title>Projeto redes sociais</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <style>
+        *{
+            user-select: none;
+        }
         body{
             background-image: url(imagens/fundo-madeira.jpg);
             height: 100vh;
@@ -34,19 +37,24 @@
         #iphone{
             height: 400px;
             position: relative;
-            top: -50vh;
+            top: -256px;
         }
         #iframe{
             position: relative;
-            width: 169px;
-            height: 299px;
-            top: -50vh;
+            width: 170px;
+            height: 301px;
+            top: -605px;
             left: 0px;
+        }
+        #brilho{
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
+        <input oninput="att()" type="range" min="5" value="100" max="150" name="Teste" id="valor">
+        <span id="brilho" >Brilho</span>
         <aside>
             <a href="home.html" target="iframe"><img src="imagens/logo-home.jpg" alt=""></a>
 
@@ -67,5 +75,19 @@
             <iframe id="iframe" name="iframe" src="home.html" frameborder="0"></iframe>
         </footer>
     </header>
+
+    <script>
+        function att(){
+            var range = document.getElementById("valor")
+            var iframe = document.getElementById("iframe")
+            var valor = Number(range.value)
+
+            iframe.style.filter =  `brightness(${valor}%)`
+        }
+        
+        
+        
+        
+    </script>
 </body>
 </html>
