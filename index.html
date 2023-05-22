@@ -14,12 +14,18 @@
             background: url("imagens/fundo-madeira.jpg") no-repeat top center;
             background-size: cover;
             background-attachment: fixed;
-
         }
         aside a img{
             height: 50px;
             width: 50px;
             border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        aside a img:hover{
+            border: 1px;
+        }
+        ::-webkit-scrollbar{
+            display: none;
         }
         aside{
             display: grid;
@@ -33,26 +39,31 @@
             display: grid;
             justify-content: center;
         }
-        #iphone{
-            height: 400px;
-            position: relative;
-            top: -256px;
-        }
         #iframe{
             position: relative;
-            width: 170px;
-            height: 301px;
-            top: -605px;
+            height: 377px;
+            width: 214px;
+            top: 1px;
             left: 0px;
+            padding: 75px;
         }
-        #brilho{
-            color: white;
+        #telefone{
+            background-image: url(imagens/frame-iphone.png);
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: 250px;
+            background-position: center center;
+            top: -320px;
+            height: fit-content;
+        }
+        article{
+            height: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <input oninput="att()" type="range" min="5" value="100" max="150" name="Teste" id="valor">
+        <input oninput="att()" type="range" min="15" value="100" max="120" name="Teste" id="valor">
         <span id="brilho" >Brilho</span>
         <aside>
             <a href="home.html" target="iframe"><img src="imagens/logo-home.jpg" alt=""></a>
@@ -67,12 +78,9 @@
 
             <a href="facebook.html" target="iframe"><img src="imagens/logo-facebook.jpg" alt=""><a>
         </aside>
-        <article>
-            <img id="iphone" src="imagens/frame-iphone.png" alt="">
+        <article id="telefone" >
+            <footer><iframe id="iframe" name="iframe" src="home.html" frameborder="0"></iframe></footer>
         </article>
-        <footer>
-            <iframe id="iframe" name="iframe" src="home.html" frameborder="0"></iframe>
-        </footer>
     </header>
 
     <script>
