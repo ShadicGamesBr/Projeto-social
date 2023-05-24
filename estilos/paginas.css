@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    width: 100vw;
+}
+a{
+    display: block;
+    background-color: darkred;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    margin: -5px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5em;
+}
+a:hover{
+    background-color: red;
+}
+::-webkit-scrollbar{
+    display: none;
+}
